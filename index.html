@@ -7,6 +7,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="main.css" />
 		<noscript><link rel="stylesheet" href="noscript.css" /></noscript>
+
+		<style>
+			.video-container {
+				position: relative;
+				width: 100%;
+				padding-bottom: 56.25%;
+				height: 0;
+				margin: 0 auto 2rem auto;
+				overflow: hidden;
+			}
+
+			.video-container iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				border: 0;
+			}
+		</style>
 	</head>
 
 	<body class="is-preload">
@@ -50,15 +70,27 @@
 
 				<article class="post featured">
 					<header class="major">
-						<h2><a href="https://github.com/dderden4/launch-analysis-api">Featured Project:<br />Launch Analysis API</a></h2>
+						<h2>
+							<a href="https://github.com/dderden4/launch-analysis-api">
+								Featured Project:<br />Launch Analysis & Visualization Platform
+							</a>
+						</h2>
 						<p>
-							A distributed REST API system for exploring and analyzing space launch data. Built with FastAPI, Redis, Docker, Kubernetes, and matplotlib,
-							the system supports launch record filtering, asynchronous analysis jobs, and generated visualizations for launch trends and outcomes.
+							A distributed REST API platform for exploring and analyzing global launch data.
+							Built using FastAPI, Redis, Docker, Kubernetes, and matplotlib, the system supports launch record filtering,
+							asynchronous analysis jobs, generated plots, and scalable deployment through containerized services.
 						</p>
 					</header>
-					<a href="https://github.com/dderden4/launch-analysis-api" class="image main">
-						<img src="pic01.jpg" alt="Launch Analysis API project image" />
-					</a>
+
+					<div class="video-container">
+						<iframe
+							src="https://www.youtube.com/embed/h1IBMnB3U54"
+							title="Launch Analysis API Demo"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen>
+						</iframe>
+					</div>
+
 					<ul class="actions special">
 						<li><a href="https://github.com/dderden4/launch-analysis-api" class="button large">View GitHub</a></li>
 						<li><a href="Launch_Analysis_Report.docx" class="button large">View Report</a></li>
