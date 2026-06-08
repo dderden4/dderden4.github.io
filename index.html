@@ -15,6 +15,16 @@
 				border-radius: 4px;
 				vertical-align: middle;
 			}
+
+			.posts article .image.fit img {
+				width: 100%;
+				height: 260px;
+				object-fit: cover;
+			}
+
+			.lra-image img {
+				object-position: center 30%;
+			}
 		</style>
 	</head>
 
@@ -27,18 +37,10 @@
 				<p>Aerospace engineering student interested in flight systems, aerospace software, engineering design, and space systems.</p>
 				<ul class="actions">
 					<li>
-	<a href="#header" class="scrolly">
-		<img src="down.jpg"
-		     alt="Scroll Down"
-		     style="
-		     	width:70px;
-		     	height:70px;
-		     	border-radius:50%;
-		     	background:white;
-		     	padding:8px;
-		     ">
-	</a>
-</li>
+						<a href="#header" class="scrolly">
+							<img src="down.jpg" alt="Scroll Down" style="width:70px;height:70px;border-radius:50%;background:white;padding:8px;">
+						</a>
+					</li>
 				</ul>
 			</div>
 
@@ -129,6 +131,22 @@
 						</ul>
 					</article>
 
+					<article>
+						<header>
+							<h2>Python Kinematics Solver</h2>
+						</header>
+						<a href="https://github.com/dderden4/kinematics" class="image fit">
+							<img src="kinematicsimage.jpg" alt="Translational and rotational motion comparison" />
+						</a>
+						<p>
+							Developed an interactive Python kinematics calculator that solves translational and rotational motion problems.
+							The program computes unknown variables such as displacement, velocity, acceleration, angular motion, and time from user-provided inputs.
+						</p>
+						<ul class="actions special">
+							<li><a href="https://github.com/dderden4/kinematics" class="button">View GitHub</a></li>
+						</ul>
+					</article>
+
 				</section>
 
 				<article class="post featured">
@@ -210,7 +228,7 @@
 						<header>
 							<h2>Longhorn Rocketry Association</h2>
 						</header>
-						<a href="#" class="image fit">
+						<a href="#" class="image fit lra-image">
 							<img src="LRA_portfolio_crop.png" alt="Longhorn Rocketry Association high-power rocket" />
 						</a>
 						<p>
